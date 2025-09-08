@@ -57,6 +57,20 @@ function initializeNavigation() {
             document.body.style.overflow = 'auto';
         }
     });
+    VANTA.WAVES({
+    el: "#vanta-bg",
+    backgroundAlpha: 1,
+    color: 0x10204,
+    shininess: 30,
+    waveHeight: 15,
+    waveSpeed: 1,
+    zoom: 1,
+    gyroControls: false,
+    mouseControls: false,
+    touchControls: false,
+    minHeight: 200,
+    minWidth: 200
+});
 
     // Smooth scrolling for navigation links - FIXED
     navLinks.forEach(link => {
